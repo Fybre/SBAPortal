@@ -55,8 +55,18 @@
             <div class="col-sm-12 col-md-8">
                 <div class="collapse" id="collapseLocation">
                     <div class="card card-body">
-                        <label>Location:</label><input id="location">
-                        <label>Sub Location:</label><input id="subLocation">
+                        <label>Location:</label>
+                        <select class="form-select" id="location">
+                            <option selected></option>
+                            <option value="Blacktown">Blacktown</option>
+                            <option value="Lilydale">Lilydale</option>
+                            <option value="Norwest">Norwest</option>
+                            <option value="Orchard Hills Logistics">Orchard Hills Logistics</option>
+                            <option value="Orchard Hills Manufacturing">Orchard Hills Manufacturing</option>
+                            <option value="Rowville">Rowville</option>
+                            <option value="Smithfield">Smithfield</option>
+                        </select>
+                        <label>Sub Location:</label><input id="subLocation" class="form-control">
                         <button class="btn" id="setLocation" type="button" onclick="setLocation()">Set</button>
                     </div>
                 </div>
