@@ -105,7 +105,9 @@
             }
             let href = window.location.href;
             params += "&postAction=redirectto&redirectUrl=" + href;
-            window.location.href = "https://snackbrands-au.thereforeonline.com/eForms/#/embed/" + formNo + params;
+            let newLocation = "https://snackbrands-au.thereforeonline.com/eForms/#/embed/" + formNo + params;
+            console.log(newLocation);
+            window.location.href = newLocation;
         }
 
         function getLocation() {
